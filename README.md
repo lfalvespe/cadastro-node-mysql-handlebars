@@ -1,14 +1,15 @@
 # Cadastro de usuários com Node JS, MySQL e Handlebars
 
+Teste em: 
 <a href="https://cadastro-node-mysql-handlebars.vercel.app/" target="new">https://cadastro-node-mysql-handlebars.vercel.app/</a>
 
-## Configurando o projeto:
+### Configurando o projeto:
 
 ```Diff
     $ npm install
 ```
 
-### Criar o arquivo .env na raiz do proheto com os dados do banco
+### Criar o arquivo .env na raiz do projeto com os dados do banco
 
 ```Diff
     DB_NAME="NOME_DO_BANCO"
@@ -17,6 +18,13 @@
     DB_PASSWORD="SENHA_DO_USUARIO"
     DB_PORT="PORTA"
 ```
+
+### Rodando o projeto
+
+```Diff
+    $ npm start
+```
+
 
 ## Dependencies
 
@@ -30,6 +38,6 @@
 - Vercel:
 <a href="https://vercel.com/" target="new"> https://vercel.com/</a>
 
-## Database
+## Deploy Database
 - Aiven:
 <a href="https://aiven.io/" target="new"> https://aiven.io/</a>
