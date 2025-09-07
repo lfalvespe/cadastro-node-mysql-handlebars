@@ -1,0 +1,20 @@
+<h2 class="page-title">Detalhes de
+  <span class="yellow">{{user.name}}</span></h2>
+
+<hr />
+
+<p>Email: <span class="email">{{user.email}}</span></p>
+<p>
+  Situação:
+
+  {{#if user.active}}
+    <span class="green">ATIVO</span>
+  {{else}}
+    <span class="red">INATIVO</span>
+  {{/if}}
+
+</p>
+<div class="actions">
+  <button><a href="/users/edit/{{user.id}}">Editar</a></button>
+  <button><a href="/users/delete/{{user.id}}">Excluir</a></button>
+</div>

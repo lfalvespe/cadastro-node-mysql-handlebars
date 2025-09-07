@@ -1,0 +1,18 @@
+<h1 class="page-title">Usuários cadastrados</h1>
+
+<hr>
+
+{{#each users}}
+
+<div>
+    <a href="/users/{{this.id}}"><span> 👉 </span> 
+    <span class="user-name">{{this.name}}</span> </a> - 
+    <span class="user-email">{{this.email}}</span> - 
+    {{#if this.active}} 
+    <span class="green">ATIVO</span>
+    {{else}}
+    <span class="red">INATIVO</span>
+    {{/if}}
+</div>
+
+{{/each}}
