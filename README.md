@@ -11,8 +11,9 @@
 - Dotenvx
 
 ## Deploy
-- Vercel
+- Vercel:
+<a href="https://vercel.com/" target="new"> https://vercel.com/</a>
 
 ## Database
-- Aiven
-<a href="https://aiven.io/" target="new">https://aiven.io/</a>
+- Aiven:
+<a href="https://aiven.io/" target="new"> https://aiven.io/</a>
