@@ -3,13 +3,13 @@ const { Sequelize } = require('sequelize')
 require('@dotenvx/dotenvx').config({override: true})
 
 const sequelize = new Sequelize(
-    process.env.MYSQL_DATABASE, 
-    process.env.MYSQLUSER, 
-    process.env.MYSQL_ROOT_PASSWORD, 
+    process.env.DB_NAME, 
+    process.env.DB_USERNAME, 
+    process.env.DB_PASSWORD, 
     {
-        host: process.env.MYSQLHOST,
+        host: process.env.DB_HOST,
         dialect: 'mysql',
-        port: process.env.MYSQLPORT,
+        port: process.env.DB_PORT,
         dialectModule: require('mysql2')
     }
 )

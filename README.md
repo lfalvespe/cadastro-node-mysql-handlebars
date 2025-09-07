@@ -2,6 +2,22 @@
 
 <a href="https://cadastro-node-mysql-handlebars.vercel.app/" target="new">https://cadastro-node-mysql-handlebars.vercel.app/</a>
 
+## Configurando o projeto:
+
+```Diff
+    $ npm install
+```
+
+### Criar o arquivo .env na raiz do proheto com os dados do banco
+
+```Diff
+    DB_NAME="NOME_DO_BANCO"
+    DB_HOST="NOME_DO_HOST"
+    DB_USERNAME="NOME_DE_USUARIO"
+    DB_PASSWORD="SENHA_DO_USUARIO"
+    DB_PORT="PORTA"
+```
+
 ## Dependencies
 
 - Express
