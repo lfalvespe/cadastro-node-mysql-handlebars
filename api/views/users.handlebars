@@ -1,18 +1,35 @@
 <h1 class="page-title">Usuários cadastrados</h1>
 
-<hr>
+<hr />
 
-{{#each users}}
+<div class="users-container">
 
-<div>
-    <a href="/users/{{this.id}}"><span> 👉 </span> 
-    <span class="user-name">{{this.name}}</span> </a> - 
-    <span class="user-email">{{this.email}}</span> - 
-    {{#if this.active}} 
-    <span class="green">ATIVO</span>
-    {{else}}
-    <span class="red">INATIVO</span>
-    {{/if}}
+  <div class="legend">
+    <div id="id">Id</div>  
+    <div id="user">Usuário</div>  
+    <div id="status">Status</div>
+  </div> <br>
+
+  {{#each users}}
+
+    <a href="/users/{{this.id}}">
+      <div class="user-data">
+
+        <div style="padding-right: 20px;"> 👉 </div>
+        <div class="yellow user-id"> {{this.id}} </div>
+
+        <div class="user-name yellow">{{this.name}}</div>
+        |
+
+        {{#if this.active}}
+          <div class="green user-status">ATIVO</div>
+        {{else}}
+          <div class="red user-status">INATIVO</div>
+        {{/if}}
+
+      </div>
+    </a>
+
+  {{/each}}
+
 </div>
-
-{{/each}}

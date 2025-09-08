@@ -3,18 +3,20 @@
 
 <hr />
 
-<p>Email: <span class="email">{{user.email}}</span></p>
-<p>
-  Situação:
-
-  {{#if user.active}}
-    <span class="green">ATIVO</span>
-  {{else}}
-    <span class="red">INATIVO</span>
-  {{/if}}
-
-</p>
-<div class="actions">
-  <button><a href="/users/edit/{{user.id}}">Editar</a></button>
-  <button><a href="/users/delete/{{user.id}}">Excluir</a></button>
+<div class="user-card">
+  <p><strong>Email: </strong> <span class="email">{{user.email}}</span></p>
+  <p>
+    <strong>Situação:</strong>
+  
+    {{#if user.active}}
+      <span class="green">ATIVO</span>
+    {{else}}
+      <span class="red">INATIVO</span>
+    {{/if}}
+  
+  </p>
+  <div class="actions">
+    <a href="/users/edit/{{user.id}}"><button class="confirm-btn">Editar</button></a>
+    <a href="/users/delete/{{user.id}}"><button class="confirm-btn">Excluir</button></a>
+  </div>
 </div>
